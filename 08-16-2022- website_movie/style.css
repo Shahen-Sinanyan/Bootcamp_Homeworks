@@ -1,0 +1,213 @@
+#body {
+    
+background-color: rgb(1, 36, 66);
+}
+.header {
+    margin-left: 42%;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(87, 122, 168);
+}
+
+.search {
+    margin-left: 20px;
+    width : 300px;
+    height: 30px;
+    border: 1px solid rgba(160, 158, 158, 0.521);
+    border-radius: 10px;
+    padding: 0px 20px
+}
+
+.searchBtn{
+    display: flex;
+    height: 32px;
+    width: 150px;
+    border: solid 1px rgb(216, 213, 213);
+    border-radius:  3px ;
+    color: rgb(99, 96, 96);
+    background-color: rgb(252, 248, 3);
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: large;
+    display:inline-block;
+}
+
+#btn {
+    height: 32px;
+    padding:0px 10px;
+    margin-left: 20px;
+    border: solid 1px rgb(216, 213, 213);
+    border-radius:  7px;
+    color: rgb(99, 96, 96);
+    background-color: rgb(236, 233, 233);
+    cursor: pointer;
+    font-size: large;
+}
+
+.cardsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.card{
+   position: relative;
+   cursor: pointer;
+    height: 450px;
+    width: 200px;
+}
+
+.image {
+    border-radius: 5px; 
+    height: 80%;
+    width: 100%;  
+}
+
+.likedIcon {
+    position: absolute;
+    right: calc(2% + 5px );
+    top: calc(2% );
+    /* border: 2px solid rgba(90, 255, 25, 0.623);
+    background-color: rgba(72, 236, 8, 0.288); */
+    height: 35px;
+    width: 30px;
+    border-radius: 0;
+    z-index: 2;
+}
+
+#myFavoritsBtn {
+    position:fixed;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    z-index: 3;
+    right: 0px;
+    top: 115px;
+    height: 32px;
+    padding:0px 10px;
+    margin-left: 20px;
+    border: solid 1px yellow;
+    border-radius:  2px;
+    color: rgb(0, 0, 0);
+    background-color:yellow;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+}
+.favoritBlock{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:5px;
+    width: 450px;
+    height: 480px;
+    padding: 20px;
+    position:absolute;
+    top: 100px;
+    right: -20px;
+    z-index: 3;
+    background-color: rgb(123, 121, 158);
+    border: 2px solid #FFFF00;
+    border-radius: 0 0 0 7px;
+    overflow-y:scroll;
+    overflow-x:visible;
+    position:fixed;   
+}
+
+.favoritBlockClose {
+    display: none;
+    position:fixed;
+    text-align: center;
+    right: 473px;
+    top: 100px;
+    background-color: yellow;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px 0 0 4px;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#favoritCard {
+    position: relative;
+   cursor: pointer;
+    height: 250px;
+    width: 120px;
+   
+}
+
+#favoritCard:hover {
+    opacity: 0.9;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#favoritCard:hover .favoritCardRemove {
+    display: block;
+
+   
+}
+
+.favoritCardRemove {
+    display: none;
+    top: 3px;
+    right: 5px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    font-size: 23px;
+    color: rgb(251, 255, 0);
+    background-color: rgba(0, 0, 0, 0.363);
+    border-radius: 4px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#favorit {  /*favorit button*/
+    position: absolute;
+   left: 2%;
+    top: 2%;
+    background-color: rgba(232, 255, 151, 0.774);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 20px;
+  
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+/*.done{ ////toggle for like button
+    background-image: ./assets/heart1.png;
+    position: absolute;
+    right: calc(2% + 25px );
+    top: calc(2% );
+    border: 2px solid rgba(90, 255, 25, 0.623);
+    background-color: rgba(72, 236, 8, 0.288); 
+    height: 35px;
+    width: 30px;
+    border-radius: 0;
+    z-index: 2;
+} */
+
+
+.year {
+  
+   top: 350px;
+    left : 10px;
+    font-size: 18px;
+    color: blanchedalmond;
+}
+
+.title {
+    float: left;
+    font-size: 21px;
+    color: blanchedalmond;
+}
