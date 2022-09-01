@@ -1,0 +1,32 @@
+
+body {
+    display: flex;
+    justify-content: center;
+}
+#button {
+    padding:10px;
+}
+table {
+    display: none;
+    width: 90%;
+    height: auto;
+    border: 2px solid blue;
+}
+
+tr {
+    border: 1px solid greenyellow;
+}
+th {
+    font-family: sans-serif;
+    font-size: 40px;
+    margin: 4px 0;
+    border: 1px solid rgb(129, 202, 20);
+}
+
+.td {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 4px 0;
+    border: 1px solid rgb(129, 202, 20);
+}
+}
